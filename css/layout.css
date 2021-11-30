@@ -21,15 +21,17 @@
         font-size: 2.4rem;
     }
     .boxes{
-        width: 100% !important;
+        width: 98% !important;
         margin: 0 !important;
-        padding:5rem 2rem !important;
+        padding:0rem 1rem !important;
         
     }
     .boxes .bg{
          width: 100% !important;
-         margin:35px 0  !important;
-
+         padding: 0;
+    }
+    .boxes .bg:not(:first-child){
+        margin:25px 0  !important;
     }
     .boxes .bg .book-text p{
         padding: 1rem;
@@ -40,6 +42,49 @@
         padding: 2rem;
         flex: 1;
     }
+    .article{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .heading h1{
+        font-size: 2.7rem;
+    }
+    .heading{
+        padding:2rem 2rem 0 2rem;
+    }
+    .footer{
+        padding: 3rem 0rem;
+    }
+    .foot{
+        flex-direction: column-reverse;
+    }
+    .nixo2{
+        order: -1;
+    }
+    .nixo3 h2{
+        font-size: 2.8rem;
+    }
+    .nixo3 p{
+        font-size: 1.5rem;
+        
+    }
+    .nixo{
+        width: 100%;
+    }
+    .foot{
+        padding: 1rem;
+    }
+    .nixo1{
+        margin-top: 2rem;
+    }
+    .nixo1 p{
+        font-size: 1.8rem;
+    }
+    .nixo2{
+        font-size: 1rem;
+        margin-top: 4rem;
+    }
+    
 }
 /* 400px to 600*/
 /* small 600px === 37.5em*/
