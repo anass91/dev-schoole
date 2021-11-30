@@ -12,7 +12,7 @@ html{
     
 }
 .header{
-    padding:1rem;
+    padding:1.5rem;
     background-color: var(--color-dark01);
 }
 .content{
@@ -29,6 +29,7 @@ html{
     width: 65%;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
     
 }
 
@@ -139,42 +140,74 @@ html{
     font-weight: bold;
 }
 
-.bg:nth-child(1) .circle,
-.bg:nth-child(1) .book-text a
+.bg:nth-child(1) .circle
 {
-    background-color: blue;
+    background-image: url(../img/future-learn.jpeg);
+    background-size: 119%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.bg:nth-child(1) .book-text a{
+    background-color: rgba(247, 97, 239, 0.938);
 }
 
-.bg:nth-child(2) .circle,
-.bg:nth-child(2) .book-text a
+.bg:nth-child(2) .circle
 {
-    background-color: blue;
+   background-image: url(../img/udcity.jpg);
+   background-size: 119%;
+   background-position: top;
+   background-repeat: no-repeat;
+}
+.bg:nth-child(2) .book-text a{
+  background-color: rgb(139, 79, 235);
 }
 
-.bg:nth-child(3) .circle,
+.bg:nth-child(3) .circle
+{
+    background-image: url(../img/udemy.jpg);
+   background-size: 119%;
+   background-position: top;
+   background-repeat: no-repeat;
+}
+
 .bg:nth-child(3) .book-text a
 {
-    background-color:#ffef00;
+  background-color: rgb(136, 18, 172);
 }
+.bg:nth-child(4) .circle
 
-.bg:nth-child(4) .circle,
-.bg:nth-child(4) .book-text a
 {
-    background-color:#6610f2;
+    background-image: url(../img/coursera.jpg);
+   background-size: 127%;
+   background-position: top;
+   background-repeat: no-repeat;
 }
+.bg:nth-child(4) .book-text a{
+   background-color: rgb(63, 204, 247);
+}
+.bg:nth-child(5) .circle
 
-.bg:nth-child(5) .circle,
-.bg:nth-child(5) .book-text a
 {
-    background-color: crimson;
+    background-image: url(../img/edx.jpg);
+    background-size: 119%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
+.bg:nth-child(5) .book-text a{
+background-color: blueviolet;
 
-.bg:nth-child(6) .circle,
-.bg:nth-child(6) .book-text a
+}
+.bg:nth-child(6) .circle
+
 {
-    background-color: green;
+    background-image: url(../img/edrak.png);
+    background-size: 121%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
-
+.bg:nth-child(6) .book-text a{
+   background-color: cadetblue;
+}
 .boxes:hover .bg{
     filter: blur(20px);
     transform: scale(0.9);
@@ -241,7 +274,7 @@ html{
  }
  .side-bar .divo:hover{
      filter: blur(0);
-     transform: scale(1.1);
+     transform: scale(1.2);
      opacity: 1;
  }
 
@@ -255,7 +288,7 @@ html{
  .mini-footer h2{
      font-size: 2rem;
      font-family: var(--font-01);
-     color: tomato;
+     color: rgb(0, 102, 255);
  }
 
 
@@ -373,4 +406,78 @@ html{
 .visible{
     opacity: 0;
     visibility:hidden;
+}
+
+
+
+/*  heading*/
+
+.heading{
+    padding: 1rem 4rem;
+    text-align: start;
+}
+.heading h1 {
+    direction: rtl;
+    margin-left: 3rem;
+    display: block;
+    background-image: linear-gradient(to right,
+                                      rgba(240, 62, 201, 0.788),
+                                      rgba(139, 47, 243, 0.836));
+     font-size: 3.5rem;
+     -webkit-background-clip: text;
+     font-family: var(--font-01);
+     color: transparent;
+}
+
+/* FOOTER*/
+.footer{
+    background-color: var(--color-dark03);
+}
+.foot{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    direction: rtl;
+}
+.nixo{
+    width: 30%;
+}
+.nixo3 h2{
+   font-family: var(--font-01);
+   font-size: 4rem;
+   color: #fff;
+   border-bottom: 2px solid #fff;
+   display: block;
+   
+}
+.nixo3{
+    width: 400px;
+    
+}
+.nixo3 p {
+    font-family: var(--font-01);
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.nixo2{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-dark04);
+}
+
+.nixo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nixo1 p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
